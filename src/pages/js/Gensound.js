@@ -1,5 +1,7 @@
 import React from 'react'
+import LoginWidget from '../../model/login/LoginWidget';
 import '../css/Gensound.css';
+
 function Gensound() {
     return (
         <div className='Gensound'>
@@ -8,15 +10,7 @@ function Gensound() {
                     <img src='/images/nav_logo.png' />
                     <p>Gen<span>Sound</span></p>
                 </div>
-                <div className='user-frame'>
-                    <div className='btn-user noselect'>
-                        <p>user.wallet</p>
-                        <div className='icon-logout noselect'>
-                            <img src='/images/icons/logout_ic.png' />
-                        </div>
-                    </div>
-
-                </div>
+                <LoginWidget></LoginWidget>
             </div>
 
             <div className='frame'>

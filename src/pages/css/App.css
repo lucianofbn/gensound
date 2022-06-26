@@ -59,3 +59,33 @@
 .Home .btn-ud {
   cursor: pointer;
 }
+
+.Home .btn-user {
+  cursor: pointer;
+  display: flex;
+  background-color: #282828;
+  height: 30px;
+  width: 170px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.Home .btn-user p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.Home .icon-logout {
+  display: flex;
+}
+
+.Home .icon-logout img {
+  height: 20px;
+  width: 20px;
+}

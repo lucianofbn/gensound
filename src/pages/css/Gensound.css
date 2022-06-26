@@ -45,10 +45,13 @@
 
 
 .Gensound .btn-user p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    font-size: 0.8rem;
+    white-space: nowrap;
     font-weight: 700;
 }
-
-
 
 
 .Gensound .icon-logout {
@@ -58,11 +61,6 @@
 .Gensound .icon-logout img {
     height: 20px;
     width: 20px;
-}
-
-
-.Gensound .btn-user p {
-    font-size: 0.8rem;
 }
 
 
