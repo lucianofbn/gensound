@@ -1,0 +1,382 @@
+.Gensound {
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Gensound .navbar {
+    display: flex;
+    padding: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Gensound .logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.Gensound .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.Gensound .logo span {
+    font-weight: 700;
+}
+
+.Gensound .btn-user {
+    cursor: pointer;
+    display: flex;
+    background-color: #282828;
+    height: 30px;
+    width: 170px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.Gensound .btn-user p {
+    font-weight: 700;
+}
+
+
+
+
+.Gensound .icon-logout {
+    display: flex;
+}
+
+.Gensound .icon-logout img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.Gensound .btn-user p {
+    font-size: 0.8rem;
+}
+
+
+.Gensound .frame {
+    background-color: #121212;
+    height: 100vh;
+    display: flex;
+    padding: 60px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.Gensound .gen-frame {
+    display: flex;
+    height: 50%;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.Gensound .music-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Gensound .genres-label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.Gensound .music-container {
+    display: flex;
+    height: 50%;
+    gap: 30px;
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.Gensound .btn-generate {
+    cursor: pointer;
+    background-color: #ECBA16;
+    color: #121212;
+    width: 160px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.Gensound .btn-playmusic {
+    cursor: pointer;
+    background-color: #ECBA16;
+    color: #121212;
+    width: 160px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.Gensound .right-frame {
+    height: 100%;
+    width: 30%;
+    min-width: 200px;
+}
+
+.Gensound .left-frame {
+    display: flex;
+    background-color: #121212;
+    width: 60%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Gensound .radios-frame {
+    display: flex;
+    gap: 70px;
+    accent-color: #ECBA16;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.Gensound .radios-frame input {
+    cursor: pointer;
+}
+
+.Gensound .left-radios {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.Gensound .right-radios {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.Gensound .music-label p {
+    color: #919191;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.Gensound .song-label p {
+    color: #FFFFFF;
+    font-weight: 700;
+    gap: 30px;
+}
+
+.Gensound .video-frame {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.Gensound .video-label p {
+    margin-bottom: 5px;
+    color: #919191;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.Gensound .video-container {
+    display: flex;
+    background-color: #282828;
+    border-radius: 8px;
+    height: 150px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Gensound .img-album img {
+    height: 90px;
+    width: 90px;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+.Gensound .img-album {
+    display: flex;
+    align-items: center;
+}
+
+.Gensound .heart-frame {
+    display: flex;
+    align-items: center;
+}
+
+
+.Gensound .heart-frame img {
+    cursor: pointer;
+    height: 20px;
+    width: 24px;
+}
+
+.Gensound .btn-frame {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Gensound .song-description-frame {
+    display: flex;
+    flex-direction: column;
+}
+
+.Gensound .video-song-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.Gensound .video-band-label p {
+    color: #919191;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Gensound .favorite-title {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.Gensound .favorite-title p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #919191;
+}
+
+.Gensound .divider {
+    border: 0;
+    border-top: 1px solid #282828;
+}
+
+.Gensound .myfavsong-off {
+    padding: 3px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.Gensound .myfavsong-off p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #919191;
+    width: 95%;
+    white-space: nowrap;
+}
+
+.Gensound .myfavsong {
+    padding: 3px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.Gensound .myfavsong p {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    width: 95%;
+    white-space: nowrap;
+}
+
+.Gensound .ray-frame {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+
+}
+
+.Gensound .current-song {
+    display: flex;
+    width: 90%;
+
+}
+
+.Gensound .top-fav-frame {
+    height: 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Gensound .body-fav-frame {
+    display: flex;
+    height: 94%;
+    flex-direction: column;
+}
+
+.Gensound .bottom-fav-frame {
+    background-color: #181818;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Gensound .favorite-frame {
+    background-color: #000000;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 90%;
+}
+
+.Gensound .wrapper {
+    border-radius: 8px;
+    height: 100%;
+}
+
+.Gensound .favplayer-controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Gensound .btn-back img {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.Gensound .btn-playpause img {
+    cursor: pointer;
+}
+
+.Gensound .btn-next img {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
