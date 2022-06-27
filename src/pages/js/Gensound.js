@@ -125,7 +125,7 @@ function MusicContainer(props) {
             <div className='video-label'>
                 <p>Video</p>
             </div>
-            <div className='video-container'>
+            <div onClick={() => window.open(props.music.videolink, "_blank")} className='video-container'>
                 <div className='img-album noselect'>
                     <img src={props.music.img} />
                 </div>
@@ -146,8 +146,6 @@ function MusicContainer(props) {
         </div>
     </div>);
 }
-
-
 
 function generateMusic(genre, setMusic) {
     callGenerateMusic(genre).then((result) => {
