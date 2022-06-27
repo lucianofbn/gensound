@@ -7,7 +7,7 @@ function Gensound() {
     const [music, setMusic] = useState(undefined)
     const [genre, setGenre] = useState('rock')
     const [favorite, setFavorite] = useState(false)
-
+    const [play, setPlay] = React.useState(false);
 
     return (
         <div className='Gensound'>
@@ -44,7 +44,8 @@ function Gensound() {
                         </div>
                         <div onClick={() => generateMusic(genre, setMusic)} className='btn-generate noselect'>Generate</div>
                     </div >
-                    {music === undefined ? "" : <MusicContainer music={music} favorite={favorite} setFavorite={setFavorite}></MusicContainer>}
+                    {music === undefined ? "" : <MusicContainer
+                        music={music} favorite={favorite} setFavorite={setFavorite} play={play} setPlay={setPlay} ></MusicContainer>}
 
                 </div>
 
@@ -108,6 +109,9 @@ function Gensound() {
 }
 
 function MusicContainer(props) {
+    var embbedurl = ""
+    embbedurl = props.play === false ? "" : "https://www.youtube.com/embed/" + props.music.videolink + "?autoplay=1"
+
     return (<div className='music-container'>
         <div className='music-frame'>
             <div className='left-music-label'>
@@ -128,7 +132,7 @@ function MusicContainer(props) {
             <div className='video-label'>
                 <p>Video</p>
             </div>
-            <div onClick={() => window.open(props.music.videolink, "_blank")} className='video-container'>
+            <div onClick={() => window.open("https://www.youtube.com/watch?v=" + props.music.videolink, "_blank")} className='video-container'>
                 <div className='img-album noselect'>
                     <img src={props.music.img} />
                 </div>
@@ -145,7 +149,16 @@ function MusicContainer(props) {
             </div>
         </div>
         <div className='btn-frame'>
-            <div className='btn-playmusic noselect'>Play Music</div>
+            <div onClick={() => props.setPlay(!props.play)} className='btn-playmusic noselect'>{props.play === true ? "Stop Music" : "Play Music"}</div>
+            <iframe
+                width="0"
+                height="0"
+                src={embbedurl}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
+
         </div>
     </div>);
 }
