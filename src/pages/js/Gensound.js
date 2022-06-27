@@ -6,6 +6,8 @@ import '../css/Gensound.css';
 function Gensound() {
     const [music, setMusic] = useState(undefined)
     const [genre, setGenre] = useState('rock')
+    const [favorite, setFavorite] = useState(false)
+
 
     return (
         <div className='Gensound'>
@@ -42,7 +44,8 @@ function Gensound() {
                         </div>
                         <div onClick={() => generateMusic(genre, setMusic)} className='btn-generate noselect'>Generate</div>
                     </div >
-                    {music === undefined ? "" : <MusicContainer music={music}></MusicContainer>}
+                    {music === undefined ? "" : <MusicContainer music={music} favorite={favorite} setFavorite={setFavorite}></MusicContainer>}
+
                 </div>
 
                 <div className='right-frame'>
@@ -116,8 +119,8 @@ function MusicContainer(props) {
                 </div>
             </div>
             <div className='right-music-label'>
-                <div className='heart-frame noselect'>
-                    <img src='/images/icons/heartoff_ic.png' />
+                <div onClick={() => props.setFavorite(!props.favorite)} className='heart-frame noselect'>
+                    {props.favorite === false ? <img src='/images/icons/heartoff_ic.png' /> : <img src='/images/icons/heart_ic.png' />}
                 </div>
             </div>
         </div>
