@@ -1,7 +1,47 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { callGenerateMusic } from '../../model/calls';
 import LoginWidget from '../../model/login/LoginWidget';
 import '../css/Gensound.css';
+
+
+function ItemsList() {
+    return (<div className='body-fav-frame'>
+        <div className='myfavsong-off noselect'>
+            <div className='ray-frame'>
+                <div className='icon-logout noselect'>
+                </div>
+            </div>
+            <div className='current-song'>
+                <p>Heaven and Hell - Black Sabbath</p>
+            </div>
+        </div>
+        <div className='myfavsong noselect'>
+            <div className='ray-frame'>
+                <div className='icon-logout noselect'>
+                    <img src='/images/icons/ray_ic.png' />
+                </div>
+            </div>
+            <div className='current-song'>
+                <p>Heaven and Hell - Black Sabbath</p>
+            </div>
+        </div>
+    </div>);
+}
+
+
+function EmptyList() {
+    return (<div className='body-fav-frame'>
+        <div className='ic-addplaylist-frame'>
+            <img src='/images/icons/addplaylist_ic.png' />
+        </div>
+        <div className='alert-frame'>
+            <p>You don't have any favorite songs yet.
+                Generate a song of your preferred style and
+                click the heart to add it here!</p>
+        </div>
+    </div>);
+}
+
 
 function Gensound() {
     const [music, setMusic] = useState(undefined)
@@ -62,27 +102,8 @@ function Gensound() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='body-fav-frame'>
-                                <div className='myfavsong-off noselect'>
-                                    <div className='ray-frame'>
-                                        <div className='icon-logout noselect'>
-                                        </div>
-                                    </div>
-                                    <div className='current-song'>
-                                        <p>Heaven and Hell - Black Sabbathaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </div>
-                                </div>
-                                <div className='myfavsong noselect'>
-                                    <div className='ray-frame'>
-                                        <div className='icon-logout noselect'>
-                                            <img src='/images/icons/ray_ic.png' />
-                                        </div>
-                                    </div>
-                                    <div className='current-song'>
-                                        <p>Heaven and Hell - Black Sabbathaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <EmptyList></EmptyList>
 
                         </div>
                         <hr className='divider' />

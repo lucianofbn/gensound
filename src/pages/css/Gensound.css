@@ -53,7 +53,6 @@
     font-weight: 700;
 }
 
-
 .Gensound .icon-logout {
     display: flex;
 }
@@ -62,7 +61,6 @@
     height: 20px;
     width: 20px;
 }
-
 
 .Gensound .frame {
     background-color: #121212;
@@ -103,7 +101,7 @@
 
 .Gensound .btn-generate {
     cursor: pointer;
-    background-color: #ECBA16;
+    background-color: #d3a81a;
     color: #121212;
     width: 160px;
     height: 45px;
@@ -113,7 +111,7 @@
     line-height: 45px;
 }
 
-.Gensound .btn-playmusic {
+.Gensound .btn-generate:hover {
     cursor: pointer;
     background-color: #ECBA16;
     color: #121212;
@@ -123,6 +121,33 @@
     text-align: center;
     font-weight: 700;
     line-height: 45px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+.Gensound .btn-playmusic {
+    cursor: pointer;
+    background-color: #d3a81a;
+    color: #121212;
+    width: 160px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.Gensound .btn-playmusic:hover {
+    cursor: pointer;
+    background-color: #ECBA16;
+    ;
+    color: #121212;
+    width: 160px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2)
 }
 
 .Gensound .right-frame {
@@ -197,6 +222,16 @@
     align-items: center;
 }
 
+.Gensound .video-container:hover {
+    display: flex;
+    background-color: #383838;
+    border-radius: 8px;
+    height: 150px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
 .Gensound .img-album img {
     height: 90px;
     width: 90px;
@@ -222,6 +257,7 @@
     height: 20px;
     width: 24px;
 }
+
 
 .Gensound .btn-frame {
     margin-top: 20px;
@@ -253,7 +289,7 @@
 }
 
 .Gensound .favorite-title p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: #919191;
 }
@@ -320,6 +356,40 @@
     flex-direction: column;
 }
 
+.Gensound .alert-emptyplaylist p {
+    display: flex;
+    color: #282828;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.Gensound .alert-frame {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 50%;
+}
+
+.Gensound .alert-frame p {
+    color: #181818;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Gensound .ic-addplaylist-frame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+}
+
+.Gensound .ic-addplaylist-frame img {
+    height: 140px;
+    width: 140px;
+}
+
 .Gensound .bottom-fav-frame {
     background-color: #181818;
     border-bottom-left-radius: 8px;
@@ -376,5 +446,5 @@
     /* Internet Explorer/Edge */
     user-select: none;
     /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
+    supported by Chrome, Edge, Opera and Firefox */
 }
