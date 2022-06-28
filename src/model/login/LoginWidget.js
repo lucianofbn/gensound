@@ -35,7 +35,7 @@ async function connectUD(web3ReactHook) {
     web3ReactHook.activate(uauth, null, true).then(async (res) => {
         uauth.getAccount().then((account) => {
             uauth.uauth.user().then((user) => {
-                window.location.href = "/gensound"
+                window.location.href = "/player"
             });
         })
             .catch((e) => {

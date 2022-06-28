@@ -13,7 +13,7 @@ root.render(
     <Router>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route exact path="/gensound" element={<Gensound />} />
+        <Route exact path="/player" element={<Gensound />} />
       </Routes>
     </Router>
   </Web3ReactProvider>

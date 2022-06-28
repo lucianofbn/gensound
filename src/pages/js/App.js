@@ -13,7 +13,7 @@ function App() {
             <p>Gen<span>Sound</span></p>
           </div>
           <p className='description'>
-            Discover new music from your favorite <br />genres and add it to your playlist!</p>
+            Discover new music from your favorite <br />genres with 1-Click and add it to your playlist!</p>
         </div>
         <hr className='divider' />
         <div className='sub-container'>
@@ -27,7 +27,7 @@ function App() {
 
 function isLoggedIn() {
   uauth_recover.uauth.user().then((user) => {
-    window.location.href = "/gensound"
+    window.location.href = "/player"
   }).catch(() => {
     return false;
   });
