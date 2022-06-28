@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Gen**Sound**
+## _Discover Music with 1-Click_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![N|GenSound](https://imgur.com/CeFh0Uk.png)](https://gensound.vercel.app)
 
-## Available Scripts
+GenSound is an application capable of facilitating the user's search for 
+new bands or songs, in addition GenSound was designed to use the 
+resources that web 3.0 offers.
 
-In the project directory, you can run:
+- https://gensound.vercel.app/
 
-### `npm start`
+## 📋 Contents
+- [Why?](#-why?)
+- [Installation](#-installation)
+- [Public Repository](#-public-repository)
+- [Upgrading](#-upgrading)
+- [Contact](#-contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Why?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Difficulty that users have to get to know new bands or songs quickly, practically and efficiently;
+- There are still few web players located with a web 3.0;
+- Difficulties that bands at the beginning of their career have to publish their work in scale and with long reach;
+- Difficulty that bands has at the beginning of their careers to receive financial incentives (cryptocurrencies) from their supporters;
+- Difficulty or non-existence of platforms that allow the user to receive financial incentives in cryptocurrencies when listening to or supporting bands that participate in the platform. 
 
-### `npm test`
+## Video Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Click to access our video-demo.
+| Video | Youtube |
+| ------ | ------ |
+| GenSound-demo | https://rumble.com/v1a8gzp-gensound.html |
 
-### `npm run build`
+## Installation
+**1 - Download the files**
+```sh
+git clone https://github.com/lucianofbn/gensound
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**2 - Create a new Firebase Project**
+- Before requesting the credentials, create a Realtime Firebase project
+- Add a new web app on firebase and get your credentials
+- Add the firebase credentials in a new 'config.json' file on "gensound/server/"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**3 - Create a new Unstoppable Domains Client**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Register in https://dashboard.auth.unstoppabledomains.com/
+- Add the creadentials in a '.env' file on "gensound/.env" as follows:
+ ```sh
+REACT_APP_UD_CLIENT_ID = ''
+REACT_APP_UD_REDIRECT_URI = ""
+```
 
-### `npm run eject`
+**4 - Install and run the project**
+ ```sh
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Public Repository
+Click to access our repository.
+| GenSound | Link |
+| ------ | ------ |
+| Public Repo | https://github.com/lucianofbn/gensound |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Upgrading 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add favorites list
+- Allow multiple genres
+- Add more music genres
+- Improve the responsiveness of the website
+- Improve song selection function
+- Add genres based on user profile (AI)
+- Use blockchain to enable transactions between bands, listeners and supporters in a sustainable way. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact 
 
-## Learn More
+Person of contact in case there are any questions 
+| Contact | Luciano Ferreira |
+| ------ | ------ |
+| Discord | lucianofbn#3226 |
+| Contact Email | lfbnwork@gmail.com |
+| Unstoppable Domains Account | lfbnwork@gmail.com |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
