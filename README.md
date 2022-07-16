@@ -10,11 +10,11 @@ resources that web 3.0 offers.
 - https://gensound.vercel.app/
 
 ## 📋 Contents
-- [Why?](#-why?)
-- [Installation](#-installation)
-- [Public Repository](#-public-repository)
-- [Upgrading](#-upgrading)
-- [Contact](#-contact)
+- [Why?](#why?)
+- [Installation](#installation)
+- [Public Repository](#public-repository)
+- [Upgrading](#upgrading)
+- [Contact](#contact)
 
 ## Why?
 
