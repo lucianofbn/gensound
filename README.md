@@ -80,5 +80,14 @@ Person of contact in case there are any questions
 | ------ | ------ |
 | Discord | lucianofbn#3226 |
 | Contact Email | lfbnwork@gmail.com |
-| Unstoppable Domains Account | lfbnwork@gmail.com |
+
+| Contact | Rafael Souza |
+| ------ | ------ |
+| Discord | Rafael Souza#2474 |
+| Contact Email | rafaelszcardoso@gmail.com |
+
+| Contact | Leandro Bernardini |
+| ------ | ------ |
+| Discord | Leandro#0775 |
+| Contact Email | lndrworks@gmail.com |
 
