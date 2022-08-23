@@ -11,6 +11,7 @@ resources that web 3.0 offers.
 
 ## 📋 Contents
 - [Why?](#why?)
+- [Video Demo](#video-demo)
 - [Installation](#installation)
 - [Public Repository](#public-repository)
 - [Upgrading](#upgrading)
